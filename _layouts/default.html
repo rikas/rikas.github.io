@@ -1,49 +1,33 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="en">
 
   {% include head.html %}
 
   <body>
-
-    {% include header.html %}
-
     <main class="page-content" aria-label="Content">
       <aside class="sidebar">
-        <div class="title">
-          <h1>Ricardo Otero</h1>
-          <h2>I ♥︎ Ruby</h2>
+        <div class="sidebar-content">
+          <div class="title">
+            <h1><a href="/">Ricardo Otero</a></h1>
+          </div>
+
+          <p>
+            I'm a freelance web developer, working with Ruby and Ruby on Rails for 10+ years. This
+            is where I write about my projects and practices and share interesting stuff about
+            programming in general.
+          </p>
+
+          <nav class="main-menu" role="main">
+            <a href="/projects">Check my projects</a>
+            <a href="/archive">Blog posts</a>
+            <a href="/about">About me</a>
+          </nav>
         </div>
-
-        <nav class="main-menu" role="main">
-          <a href="">Projects</a>
-          <a href="">Blog</a>
-          <a href="/about">About</a>
-        </nav>
-
-        <ul class="social-media-list">
-          <li>
-            <a href="https://github.com/{{ site.github_username }}">
-              <span class="icon icon--github">{% include icon-github.svg %}</span>
-              <span class="username">{{ site.github_username }}</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://twitter.com/{{ site.twitter_username }}">
-              <span class="icon icon--twitter">{% include icon-twitter.svg %}</span>
-              <span class="username">{{ site.twitter_username }}</span>
-            </a>
-          </li>
-        </ul>
       </aside>
 
-      <div class="wrapper">
+      <div class="main-content">
         {{ content }}
       </div>
     </main>
-
-    {% include footer.html %}
-
   </body>
-
 </html>

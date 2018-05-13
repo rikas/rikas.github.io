@@ -8,8 +8,6 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
@@ -17,15 +15,8 @@ body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
   font-kerning: normal;
 }
-
-
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -37,8 +28,6 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * Images
  */
@@ -46,8 +35,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-
-
 
 /**
  * Figures
@@ -59,8 +46,6 @@ figure > img {
 figcaption {
   font-size: $small-font-size;
 }
-
-
 
 /**
  * Lists
@@ -76,42 +61,32 @@ li {
   }
 }
 
-
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
+  font-weight: normal;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
-
+h1 {
+  font-family: 'Alegreya', serif;
+}
 
 /**
  * Links
  */
 a {
   color: $brand-color;
-  text-decoration: none;
-
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
+  text-decoration: underline;
+  padding: 4px 0;
 
   &:hover {
-    color: $text-color;
-    text-decoration: underline;
-  }
-
-  .social-media-list &:hover {
+    color: #fff;
+    background: $brand-color;
     text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
   }
 }
-
 
 /**
  * Blockquotes
@@ -129,15 +104,12 @@ blockquote {
   }
 }
 
-
-
 /**
  * Code formatting
  */
 pre,
 code {
-  @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
+  @include relative-font-size(0.85);
   border-radius: 3px;
   background-color: #eef;
 }
@@ -147,69 +119,12 @@ code {
 }
 
 pre {
-  padding: 8px 12px;
+  padding: 10px 15px;
   overflow-x: auto;
 
   > code {
     border: 0;
     padding-right: 0;
     padding-left: 0;
-  }
-}
-
-
-
-/**
- * Wrapper
- */
-.wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-/**
- * Icons
- */
-.icon > svg {
-  display: inline-block;
-  vertical-align: middle;
-
-  path {
-    fill: $grey-color;
-  }
-}
-
-.social-media-list {
-  .icon {
-    padding-right: 5px;
-  }
-
-  li + li {
-    padding-top: 5px;
   }
 }

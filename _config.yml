@@ -4,3 +4,6 @@ email: oterosantos@gmail.com
 description: Ricardo Otero homepage
 twitter_username: rikas
 github_username: rikas
+linkedin_username: oterosantos
+paginate: 5
+paginate_path: '/page:num/'
