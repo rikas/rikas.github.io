@@ -43,9 +43,9 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 html, body { height: 100%; }
 
-.page-content { display: flex; height: 100%; }
+.page-content { display: flex; }
 
-.main-content { padding: 60px; flex: 1; max-width: 700px; }
+.main-content { padding: 60px; flex-grow: 1; max-width: 700px; }
 
 .post-list { margin-left: 0; list-style: none; }
 .post-list > li { margin-bottom: 30px; }
@@ -113,9 +113,9 @@ html, body { height: 100%; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
-.sidebar { padding: 60px 30px; width: 200px; background-color: #0f0f0f; color: #e8e8e8; height: 100%; }
+.sidebar { width: 260px; background-color: #0f0f0f; color: #e8e8e8; min-height: 100vh; }
 
-.sidebar-content { display: flex; flex-direction: column; justify-content: flex-start; }
+.sidebar-content { margin: 60px 30px; display: flex; flex-direction: column; justify-content: flex-start; }
 .sidebar-content h1 { margin-bottom: 30px; }
 .sidebar-content h1 a { color: #fff; }
 .sidebar-content h1 a:hover { background: transparent; text-decoration: underline; }
@@ -140,4 +140,4 @@ html, body { height: 100%; }
 .post-content h3 { font-size: 29.25px; }
 .post-content h4 { font-size: 22.5px; }
 
-.about__photo { float: left; max-width: 200px; margin: 0 30px 30px 0; }
+.about__photo { float: left; max-width: 200px; margin: 0 30px 15px 0; }

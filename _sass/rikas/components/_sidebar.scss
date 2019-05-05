@@ -1,14 +1,14 @@
 $sidebar-width: 200px;
 
 .sidebar {
-  padding: $spacing-unit * 2 $spacing-unit;
-  width: $sidebar-width;
+  width: $sidebar-width + $spacing-unit * 2;
   background-color: $grey-color-darker;
   color: $grey-color-light;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .sidebar-content {
+  margin: $spacing-unit * 2 $spacing-unit;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
