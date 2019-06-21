@@ -2,6 +2,7 @@ $sidebar-width: 200px;
 
 .sidebar {
   width: $sidebar-width + $spacing-unit * 2;
+  min-width: 220px;
   background-color: $grey-color-darker;
   color: $grey-color-light;
   min-height: 100vh;

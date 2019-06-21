@@ -113,7 +113,7 @@ html, body { height: 100%; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
-.sidebar { width: 260px; background-color: #0f0f0f; color: #e8e8e8; min-height: 100vh; }
+.sidebar { width: 260px; min-width: 220px; background-color: #0f0f0f; color: #e8e8e8; min-height: 100vh; }
 
 .sidebar-content { margin: 60px 30px; display: flex; flex-direction: column; justify-content: flex-start; }
 .sidebar-content h1 { margin-bottom: 30px; }
