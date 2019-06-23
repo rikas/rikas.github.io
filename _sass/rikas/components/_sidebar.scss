@@ -1,18 +1,19 @@
 $sidebar-width: 200px;
 
 .sidebar {
-  width: $sidebar-width + $spacing-unit * 2;
+  display: flex;
   min-width: 220px;
+  min-height: 100vh;
+  width: $sidebar-width + $spacing-unit * 2;
   background-color: $grey-color-darker;
   color: $grey-color-light;
-  min-height: 100vh;
 }
 
 .sidebar-content {
-  margin: $spacing-unit * 2 $spacing-unit;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin: $spacing-unit * 2 $spacing-unit;
 
   h1 {
     margin-bottom: $spacing-unit;
@@ -31,7 +32,6 @@ $sidebar-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 256px;
     margin: $spacing-unit 0;
 
     a {
@@ -45,22 +45,25 @@ $sidebar-width: 200px;
 
   .social-media-list {
     display: flex;
+    flex-grow: 1;
     flex-direction: row;
     align-items: flex-end;
     list-style: none;
-    margin: 0 0 $spacing-unit;
 
     a {
       padding: 3px 10px;
-      border-radius: 2px;
-      color: #828282;
-      background-color: rgba(0, 0, 0, 0.2);
       margin-right: $spacing-unit / 2;
 
+      path {
+        fill: $menu-link-color;
+      }
+
       &:hover {
-        text-decoration: none;
-        color: darken($grey-color-light, 15%);
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: transparent;
+
+        path {
+          fill: lighten($menu-link-color, 25%);
+        }
       }
     }
   }

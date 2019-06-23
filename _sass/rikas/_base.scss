@@ -80,10 +80,13 @@ a {
   color: $brand-color;
   text-decoration: underline;
   padding: 4px 0;
+  background-color: transparent;
+  transition-property: background-color, color;
+  transition-duration: 200ms;
 
   &:hover {
     color: #fff;
-    background: $brand-color;
+    background-color: $brand-color;
     text-decoration: none;
   }
 }
