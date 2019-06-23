@@ -122,8 +122,8 @@ html, body { height: 100%; }
 .sidebar-content nav.main-menu { display: flex; flex-direction: column; justify-content: flex-start; margin: 30px 0; }
 .sidebar-content nav.main-menu a { color: #6da4eb; }
 .sidebar-content nav.main-menu a:hover { color: #fff; }
-.sidebar-content .social-media-list { display: flex; flex-grow: 1; flex-direction: row; align-items: flex-end; list-style: none; }
-.sidebar-content .social-media-list a { padding: 3px 10px; margin-right: 15px; }
+.sidebar-content .social-media-list { display: flex; flex-grow: 1; align-items: flex-end; justify-content: space-around; }
+.sidebar-content .social-media-list a { max-width: 35px; }
 .sidebar-content .social-media-list a path { fill: #6da4eb; }
 .sidebar-content .social-media-list a:hover { background-color: transparent; }
 .sidebar-content .social-media-list a:hover path { fill: #deeafa; }
