@@ -41,7 +41,4 @@ $grey-color-darker:  darken($grey-color, 45%) !default;
 @import "rikas/base";
 @import "rikas/layout";
 @import "rikas/syntax-highlight";
-
-@import "rikas/components/sidebar";
-@import "rikas/components/posts";
-@import "rikas/components/about";
+@import "rikas/components/index"
