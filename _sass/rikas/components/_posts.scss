@@ -42,3 +42,23 @@
     @include relative-font-size(1.25);
   }
 }
+
+.post-content-keep-reading {
+  display: inline-block;
+  border-bottom: 1px solid;
+  text-decoration: none;
+  padding-left: 4px;
+
+  &:hover {
+    &::after {
+      transform: translateX(4px);
+    }
+  }
+  &::after {
+    content: "→";
+    display: inline-block;
+    margin: 0 4px 0 4px;
+    transform: translateX(0);
+    transition: transform .2s ease-out;
+  }
+}
