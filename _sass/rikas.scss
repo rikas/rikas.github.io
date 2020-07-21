@@ -40,5 +40,9 @@ $grey-color-darker:  darken($grey-color, 45%) !default;
 // Import partials.
 @import "rikas/base";
 @import "rikas/layout";
-@import "rikas/syntax-highlight";
+
+// The syntax highlight is compatible with Pygments - http://jwarby.github.io/jekyll-pygments-themes
+// @import "rikas/syntax-highlight";
+@import "rikas/dark-syntax-highlight";
+
 @import "rikas/components/index"
