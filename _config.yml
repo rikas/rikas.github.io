@@ -7,3 +7,7 @@ github_username: rikas
 linkedin_username: oterosantos
 paginate: 5
 paginate_path: '/page:num/'
+jekyll_analytics:
+  GoogleAnalytics:          # Add, if you want to track with Google Analytics
+    id: UA-8227995-3        # Required - replace with your tracking id
+    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
