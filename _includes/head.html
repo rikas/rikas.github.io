@@ -17,7 +17,6 @@
   {% include google-analytics.html %}
   {% endif %}
 
-  {% if jekyll.environment == 'production' %}
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YTL962FNLE"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -25,5 +24,4 @@
     gtag('js', new Date());
     gtag('config', 'G-YTL962FNLE');
   </script>
-  {% endif %}
 </head>
