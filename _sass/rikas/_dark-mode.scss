@@ -1,0 +1,31 @@
+$dark-brand-color: #4a85d3;
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: $background-color;
+    background-color: $text-color;
+  }
+
+  pre,
+  code {
+    @include relative-font-size(0.85);
+    border-radius: 3px;
+    color: $background-color;
+    background-color: lighten($text-color, 30%);
+  }
+
+  .sidebar {
+    background-color: $text-color-lighter;
+    color: $grey-color-light;
+  }
+
+  a {
+    color: $dark-brand-color;
+
+    &:hover {
+      color: #fff;
+      background-color: $dark-brand-color;
+      text-decoration: none;
+    }
+  }
+}
